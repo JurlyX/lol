@@ -7,7 +7,7 @@ RUN curl -sL https://deb.nodesource.com/setup_12.x | bash && \
     apt install nodejs && \
     rm -f /etc/apt/sources.list.d/nodesource.list
 RUN npm install -g http-server
- 
+
 node index.js
 
 RUN BACKGROUND http-server -p 8000
